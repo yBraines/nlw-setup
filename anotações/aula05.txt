@@ -1,0 +1,17 @@
+A aula começa apresentando o Git, que se baseia em uma linha do tempo do código (branch) com seus pontos da história (commits). O git contém esse controle de versão (a versão muda toda vez que mudamos o código). Todo esse histórico e linha do tempo ficaram no repositório. 
+
+A branch pode ter linhas do tempo alternativas, para por exemplo, trabalhar com outras pessoas (mas o git ainda vai ter sua linha do tempo principal). E para fazer um commit, preparamos ele no stage.
+
+E para isso, temos os comandos do Git:
+
+// inicia o git (repositório) do projeto
+git init
+
+// adiciona arquivos modificados, ao stage
+git add .
+
+// cria e descreve um ponto na história
+git commit -m "message here'
+
+// envia alterações para o repositório remoto
+git push

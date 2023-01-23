@@ -1,0 +1,9 @@
+No Javascript, temos como usar algumas funções como alert(), click() e várias outras. Além, é claro, de termos coisas como objetos e outros tipos de dados. Todos objetos conntém propriedades, que podem ser números, strings, funções (métodos) e outros.
+
+Mas nesse projeto, iremos usar uma biblioteca (framework) chamada de React. Para usarmos ela, usaremos um script com o atributo src="" apontando exatamente onde essa biblioteca fica.
+
+Nessa aula, são apresentados alguns conceitos da básica framework da NLW SETUP, trabalhamos com a DOM também, e avançamos mais ainda no CSS, usando conceitos como position, padding, margin, tamanho e redimensionamento, e um recurso essencial para a responsividade: o @media, apresentado como:
+
+@media (max-width: xxxpx) {}
+
+Usamos funções na aula, aprendemos mais conceitos do Javascript como arrays, objetos e outros.

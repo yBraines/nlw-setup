@@ -1,0 +1,9 @@
+Nessa aula, usamos a biblioteca new Date() que já vem com o Javascript padrão, para recebermos a data atual. Usamos também, algumas funções dentro dessa biblioteca, como toLocaleDateString() e slice(), para conseguirmos receber a data do jeito que queríamos. A função new Date() cria um objeto que na verdade é a data atual, toLocaleDateString() faz com que essa data se torne apenas os dados de dia, mês e ano (podendo ter como parâmetro uma string para transformarmos em formato brasileiro), e slice() que vai recortar as pontas da data, podendo remover, por exemplo, somente o final da data recebida ('/2023').
+
+Também, usamos algumas funções como alert(), que envia uma mensagem ao usuário através do navegador, e desenvolvemos uma function a partir daí, que verifica se o dado recebido já existe, (através de uma função da biblioteca NLWSETUP), e caso já exista, ele avisa ao usuário com alert() que o dado já existe.
+
+Usamos para salvar o documento, o parâmetro para addEventListener "change", que executa a function quando o elemento ouvinte sofre uma mudança. No HTML, isso pode ser entendido como o atributo 'onchange=""'.
+
+Usamos o operador lógico || como "ou". Ao fazermos uma variável receber X valor, usamos esse operador lógico para que, caso esse valor seja null (ou outros valores, como undefined, por exemplo), o valor a seguir possa substituir o valor em que a variável vá receber. Exemplo:
+
+var variable = null || "string" // Resultado: 'string'

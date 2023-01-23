@@ -1,0 +1,1 @@
+As anotações começam desde a aula 03 porque as aulas 01 e 02 contém conteúdos básicos e já passados em outros cursos básicos da Rocketseat.

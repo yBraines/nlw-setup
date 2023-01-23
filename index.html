@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="Logo marca do programa Habits" />
+      <button>
+        <img src="./assets/plus.svg" alt="Ícone de mais roxo" id="plus" />
+        <p>Registrar o meu dia</p>
+      </button>
+    </header>
+    <form>
+      <div class="habits">
+        <div class="habit" data-name="water">💧</div>
+        <div class="habit" data-name="bedroom">🧹</div>
+        <div class="habit" data-name="reading">📕</div>
+        <div class="habit" data-name="food">🍎</div>
+        <div class="habit" data-name="study">✍</div>
+        <div class="habit" data-name="pills">💊</div>
+        <div class="habit" data-name="plants">🌱</div>
+      </div>
+
+      <div class="days"></div>
+    </form>
+    <div id="alrRegistered">Dia já registrado.</div>
+    <div id="registered">Registrado com sucesso! ✅</div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+  <script src="./script.js"></script>
+</html>

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Roboto+Mono:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Header e body  */
+body {
+  height: 100vh;
+  background-color: #09090a;
+  color: white;
+}
+header {
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #09090a;
+  width: 100vw;
+}
+button {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #8b5cf6;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+}
+/* Hábitos e formulário*/
+form {
+  display: flex;
+  gap: 32px;
+  margin: 0px 120px;
+  padding-top: 180px;
+}
+.habits {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 65px;
+}
+.habit {
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.days {
+  display: flex;
+  gap: 48px;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.day div {
+  padding-bottom: 8px;
+}
+.day div {
+  margin-bottom: 8px;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+  color: #a1a1aa;
+}
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #27272a;
+  border-radius: 8px;
+  background-color: #18181b;
+}
+input:checked {
+  border: 2px solid #a78bfa;
+  background: #8b5cf6;
+}
+#registered, #alrRegistered {
+  position: fixed;
+  width: 98%;
+  height: 8vh;
+  margin: 1%;
+  top: 0px;
+  padding: 1%;
+}
+#registered {
+  background-color: rgb(0, 255, 0, 0.5);
+  transition: background 1s;
+  font-size: larger;
+  visibility: hidden;
+}
+#alrRegistered {
+  background-color: rgb(255, 0, 0, 0.5);
+  transition: background 1s;
+  font-size: larger;
+  visibility: hidden;
+}
+@media (max-width: 570px) {
+  button p {
+    display: none;
+  }
+}
