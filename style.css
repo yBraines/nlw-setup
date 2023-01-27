@@ -4,6 +4,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
+:root {
+  --form-font: 2.5vh;
+  --form-items-smaller: 7vh;
+  --form-items-normal: 9.5vh;
+}
 /* Header e body  */
 body {
   height: 100vh;
@@ -11,7 +19,7 @@ body {
   color: white;
 }
 header {
-  padding: 48px;
+  padding: 8px 30px 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,7 +28,7 @@ header {
   width: 100vw;
 }
 button {
-  padding: 16px 24px;
+  padding: 1.6rem 2.4rem;
   border-radius: 8px;
   border: 1px solid #8b5cf6;
   background-color: transparent;
@@ -30,33 +38,33 @@ button {
   gap: 12px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 125%;
 }
 /* Hábitos e formulário*/
 form {
   display: flex;
   gap: 32px;
-  margin: 0px 120px;
-  padding-top: 180px;
+  margin: 0px 5%;
+  padding-top: 100px;
 }
 .habits {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: 65px;
+  margin-top: 80px;
 }
 .habit {
-  width: 64px;
-  height: 64px;
-  font-size: 32px;
+  width: var(--form-items-normal);
+  height: var(--form-items-normal);
+  font-size: var(--form-items-smaller);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .days {
   display: flex;
-  gap: 48px;
+  margin-top: 15px;
 }
 .day {
   display: flex;
@@ -65,20 +73,20 @@ form {
   gap: 24px;
 }
 .day div {
-  padding-bottom: 8px;
+  padding-bottom: 16px;
 }
 .day div {
   margin-bottom: 8px;
   font-family: "Roboto Mono";
-  font-size: 20px;
+  font-size: var(--form-font);
   line-height: 125%;
   color: #a1a1aa;
 }
 input {
   appearance: none;
   -webkit-appearance: none;
-  width: 64px;
-  height: 64px;
+  width: var(--form-items-normal);
+  height: var(--form-items-normal);
   border: 2px solid #27272a;
   border-radius: 8px;
   background-color: #18181b;
@@ -107,8 +115,28 @@ input:checked {
   font-size: larger;
   visibility: hidden;
 }
+@media (max-height: 1165px) {
+  :root {
+    --form-items-normal: 8vh;
+  }
+}
+@media (max-height: 770px) {
+  :root {
+    --form-items-normal: 7vh;
+  }
+}
+@media (max-height: 640px) {
+  :root {
+    --form-items-normal: 6vh
+  }
+}
 @media (max-width: 570px) {
   button p {
     display: none;
+  }
+}
+@media (max-width: 300px) {
+  header {
+    flex-direction: column;
   }
 }
