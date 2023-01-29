@@ -67,7 +67,7 @@ form {
 .days {
   display: flex;
   margin-top: 15px;
-  gap: 24px;
+  gap: 16px;
 }
 .day {
   display: flex;
@@ -121,17 +121,20 @@ input:checked {
 }
 @media (max-height: 1165px) {
   :root {
-    --form-items-normal: 7.2vh;
+    --form-items-normal: 7.5vh;
+    --form-items-smaller: 6vh;
   }
 }
 @media (max-height: 770px) {
   :root {
-    --form-items-normal: 6.2vh;
+    --form-items-normal: 6.5vh;
+    --form-items-smaller: 5vh;
   }
 }
 @media (max-height: 640px) {
   :root {
-    --form-items-normal: 5.2vh;
+    --form-items-normal: 5.5vh;
+    --form-items-smaller: 4vh;
   }
 }
 @media (max-width: 570px) {
