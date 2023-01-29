@@ -6,6 +6,7 @@
 }
 html {
   font-size: 62.5%;
+  max-height: 100vh;
 }
 :root {
   --form-font: 2.5vh;
@@ -17,6 +18,7 @@ body {
   height: 100vh;
   background-color: #09090a;
   color: white;
+  max-height: 100vh;
 }
 header {
   padding: 8px 30px 0px 30px;
@@ -65,6 +67,7 @@ form {
 .days {
   display: flex;
   margin-top: 15px;
+  gap: 24px;
 }
 .day {
   display: flex;
@@ -95,7 +98,8 @@ input:checked {
   border: 2px solid #a78bfa;
   background: #8b5cf6;
 }
-#registered, #alrRegistered {
+#registered,
+#alrRegistered {
   position: fixed;
   width: 98%;
   height: 8vh;
@@ -117,17 +121,17 @@ input:checked {
 }
 @media (max-height: 1165px) {
   :root {
-    --form-items-normal: 8vh;
+    --form-items-normal: 7.2vh;
   }
 }
 @media (max-height: 770px) {
   :root {
-    --form-items-normal: 7vh;
+    --form-items-normal: 6.2vh;
   }
 }
 @media (max-height: 640px) {
   :root {
-    --form-items-normal: 6vh
+    --form-items-normal: 5.2vh;
   }
 }
 @media (max-width: 570px) {
